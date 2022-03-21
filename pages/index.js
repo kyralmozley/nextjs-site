@@ -59,12 +59,18 @@ export default function Home({ posts }) {
             Hi There 👋
           </h1>
           <p className="text-xl leading-7 text-gray-800 dark:text-gray-200">
-           I'm Kyra, PhD student by day, developer by night.</p>
+           I'm Kyra, PhD student by day, developer by night.
+          </p>
+
           <p className="text-md leading-7 text-gray-700 dark:text-gray-300">
-          My research is at the intersection of machine learning and AI with cyber security. Currently, I am working on <span className='font-bold'>detecting deepfake videos</span>.            
-           Other interests include language models, deanonymisation, network security.</p>
+            My research is at the intersection of machine learning and AI with cyber security. 
+            Currently, I am working on <span className='font-bold'>detecting deepfake videos</span>. Other interests include language models, deanonymisation, network security.
+          </p>
+
            <p className="text-md text-gray-700 dark:text-gray-300">
-           I am the CTO at <a href='https://nftsec.org' target='_blank' className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">NFTSec</a>, a project focusd on provided much needed security education within the NFT space.</p>
+            I am the CTO at <a href='https://nftsec.org' rel="noreferrer" target='_blank' className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">NFTSec</a>, a project focusd on provided much needed security education within the NFT space.
+           </p>
+
         </div>
           {/* TODO: github /other stats here?*/ }
           
@@ -74,8 +80,8 @@ export default function Home({ posts }) {
             👩‍🎓 Education
             </h1>
             <ul className='list-disc list-inside text-gray-700 dark:text-gray-200'>
-              <li><span class="italic">2020-Current:</span> <span className='font-bold'>PhD Information Security</span> @ Royal Holloway, University of London </li>
-              <li><span class="italic">2016-2020:</span> <span className='font-bold'>Computer Science</span> @ University of Cambridge </li>
+              <li><span className="italic">2020-Current:</span> <span className='font-bold'>PhD Information Security</span> @ Royal Holloway, University of London </li>
+              <li><span className="italic">2016-2020:</span> <span className='font-bold'>Computer Science</span> @ University of Cambridge </li>
             </ul>
           </div>
         </div>
@@ -86,7 +92,7 @@ export default function Home({ posts }) {
             💼 Experience
             </h1>
             <ul className='list-disc list-inside text-gray-700 dark:text-gray-200'>
-              <li><span class="italic">April 2022-July 2022:</span> <span className='font-bold'>Machine Learning Engineer</span> Intern @ Wayve</li>
+              <li><span className="italic">April 2022-July 2022:</span> <span className='font-bold'>Machine Learning Engineer</span> Intern @ Wayve</li>
 
             </ul>
           </div>
