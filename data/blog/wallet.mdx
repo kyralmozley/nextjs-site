@@ -1,0 +1,123 @@
+---
+title: '📚  All About Wallets'
+date: '2022-03-28'
+tags: ['wallets', 'basics','definitions']
+draft: false
+summary: 'Choosing which wallets to use and when can seem confusing as there are so many options out there. In this article we will introduce how wallets work, define the different types of wallets that exist.'
+---
+
+If you're interested in NFTs, one of the first things you'll need to do is create a wallet. This wallet will allow you to store and exchange digital assets and operates similarly to your traditional bank account. This article will cover the following:
+- 🔑 Public keys, Private keys, and Seed Phrases 🌱
+- 💻 Software vs Hardware Wallets 💾
+- 🏦 Custodial vs Non-Custodial Wallets 🚣
+
+***
+
+Just like your real bank account, we need to consider what *currency* we want to use. Ethereum is the popular choice as most NFTs run on its network, so the majority of wallets (such as MetaMask) will support it straight out of the box. 
+
+However, there are other options gaining popularity (such as Binance Smart Chain, Solana and Tezos), and as these run on their own respective networks, you cannot use your ETH stored in MetaMask to purchase an NFT on the Solana network: you would need to buy SOL and set up a Solana wallet. 
+So, if you want to interact with a network other than Ethereum you might consider a cross-chain compatible wallet (such as Phantom or Trust Wallet.) 
+
+*Note:* There are workarounds such as bridging, but as this is an intro article, discussion of them is saved for another day!
+
+*** 
+
+# 🔑  Wallet Keys
+
+Once you have created your wallet, you'll see a super long random-looking string like this:
+
+> 0xAb3b229eb4BCff881275e7EA2F0FD24EEac8C8FE
+
+This is your wallet address and forms your **public key**. It is a unique identifier for your wallet and is fine to share publicly. Think of this as your bank account number or your PayPal email. People need to know how and where to send your funds, but with this alone they cannot access your assets.
+
+
+The **private key** however, is something you should never share - it is like the password for your PayPal account, or your PIN for your credit card. If someone has both your public and private key, they will be able to access your account. Scammers will try to get your private keys to steal from your wallet. 
+
+You should store this private key somewhere safe, but as it is long and difficult to copy without making a mistake, you will also be shown a seed phrase, a collection of short random words like so:
+
+> alone submit grief shield glare coral chase trigger best state coffee liar cool broom shuffle tank play
+
+The seed phrase is simply another way to represent your private key in a more human-readable format. If you lose your private key or seed phrase you will **not** be able to gain access to your account, so make sure you write it down (preferably not digitally - but we will cover more on this in another article soon.)
+
+<div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4" role="alert">
+  <b class="font-bold">🚨 TLDR; </b>
+  <p>Never tell anyone your private key or seed phrase.</p>
+</div>
+
+*** 
+
+# 💰  Types of Wallets
+
+We will now cover several different types of wallets that you might hear about that all vary in level of usability, convenience, and security. These are software vs hardware wallets, and custodial vs non-custodial wallets.
+
+## 🌐  Connectivity 
+
+The easiest to set up and likely what most people first interact with are **software wallets**, popular examples include MetaMask, Coinbase, or Argent. They can be browser extensions, desktop or mobile apps, and are normally free to create and will store your private keys on your device. They will be connected to the internet 24/7, allowing you to perform transfers easily. But, because they are always online,  it makes it more vulnerable to scammers as if they discover your private key, they can log in on their device and access your wallet.
+
+
+On the other hand, we have **hardware wallets**, a device that looks like a USB stick and is considered the safest way to store your assets. Popular brands include Ledger and Trezor.
+
+Your private key is stored on the device rather than on a remote server, so unlike software wallets, they are not constantly connected to the internet, reducing the risk of hackers discovering it. It is worth highlighting that the added security comes with a trade-off: you can now only sign a transaction when the hardware wallet is plugged in, making it more inconvenient than a chrome extension. You can protect the wallet with a created PIN, and like software wallets, these will have a seed phrase you'll need to keep safe in the event something happens to your device. 
+
+<div class="bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4" role="alert">
+  <p class="font-bold">Hardware Wallets:</p>
+    <p>Make sure you buy a hardware wallet directly from the manufacturer. You cannot guarantee ones from third-parties such as Amazon have not been compromised. </p>
+  <p>Before transferring anything to your hardware wallet, we recommend you try to reset it and implement the backup with the seed phrase to make sure it is all working okay. </p>
+</div>
+
+**In Summary:**
+
+| Software Wallet | Hardware Wallet| 
+| -------- | -------- |
+| ✅ Normally free to create    | ❌ Have to pay to purchase     | 
+| ✅ High usability and convenience | ❌ Mild inconvenience to use |
+| ❌ Private key saved on your device (laptop, phone) which can be vulnerable to malware | ✅ Private key is offline and not easily obtained |
+
+
+## 👪  Custody of Wallet 
+
+A **custodial** wallet is a third party (such as an exchange) that stores, or has custody, of your wallet's private key. They can be a good starting place because they are easier to manage since you log in via email and password rather than dealing with keys. However, as a side effect of them storing your private key, it means you do not own any assets stored here, the third party will have full control over your funds. 
+
+Let's imagine custodial wallets like online banking; you don't physically have your money, it's in a vault somewhere, all you can do is approve the transactions for your account. But, reliance on a third party raises issues such as what if they get hacked, collapse, or block your account / confiscate your funds. 
+In the real world, if your bank breaks down, there is usually regulation to ensure your funds are protected. In the UK for example, the FSCS (Financial Services Compensation Scheme) will cover up to £85k of losses. However, crypto tends to fall outside regulation and protection laws so there is no safety net. You really have to trust this third party! 
+
+
+What if we don't want someone else owning our wallet? We want the crypto equivalent of stashing cash under the mattress rather than keeping it in a bank. This is called a **non-custodial** wallet, in which you essentially become your own bank and have full ownership and control of your keys and assets. 
+Although custodial marketplaces are convenient for trading cryptocurrencies, the majority of wallets for NFTs are non-custodial. Therefore, you will have to be responsible for the saftey of your keys, and as fellow NFT and security enthusiast [Bee](https://twitter.com/bee_sec_san) puts it:
+
+<figure>
+<blockquote>
+  <p>The problem with being your own bank is that you are your own bank.</p>
+</blockquote>
+ <figcaption>🐝 Bee also has a great article on wallet security: [skerritt.blog/wallet-security/](https://skerritt.blog/wallet-security/)</figcaption>
+</figure>
+
+With a non-custodial wallet, you have to take responsibility for securing yourself to prevent hackers or anyone else from accessing your assets. You wouldn't (hopefully) tell everyone your PIN or write it on a post-it stuck to your bank card, and this is the same mentality we need here! For years, banks have emphasised they would never ask for your password via email or over the phone, and if someone does it's clearly a scam - so when you're asked for your seed phrase by some rando on discord, think *what would my bank do* and report it. 
+
+<center>
+<figure>
+  <img src="https://i.imgur.com/ARqlR9U.png" width="400"/>
+  <figcaption>Never tell anyone your seed phrase or private key!</figcaption>
+</figure>
+</center>
+Our next post will cover exactly what steps are required in securing your wallet and the best way to 'be your own bank', so stay tuned. 
+
+
+**In Summary:**
+
+| Custodial Wallet | Non-Custodial Wallet| 
+| -------- | -------- |
+| ✅ Easy set up and recovery options    | ❌ Account recovery impossible if seed phrase / private key lost | 
+| ✅ May offer lower fees as often associated with exchange | ❌ You are responsible for keeping your wallet secure |
+| ❌ Third-party owns the assets, not you  | ✅ You have complete control over the wallet and private key |
+| ❌ Third party may be breached, ban your account, or collapse  | ✅ You take ownership of the assets so they cannot be confiscated  |
+
+*** 
+<div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md" role="alert">
+  <div class="flex">
+    <div>
+      <p class="font-bold">Conclusion:</p>
+      <p class="text-sm">We want a wallet that we actually control, so recommend using a non-custodial wallet such as MetaMask, Trust Wallet, or AlphaWallet. For maximum security and high value assets, use a hardware wallet if possible.</p>
+    </div>
+  </div>
+</div>
